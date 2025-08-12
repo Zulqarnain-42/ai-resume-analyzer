@@ -19,7 +19,7 @@ const ResumeCard = ({resume}:{resume:Resume}) =>{
             </div>
             <div className="gradient-border animate-in fade-in duration-1000">
                 <div className="w-full h-full">
-                    <img src={resume.resumePath} alt="resume" className="w-full h-[350px] max-sm:h-[200px] object-cover object-top" />
+                    <img src='' alt="resume" className="w-full h-[350px] max-sm:h-[200px] object-cover object-top" />
                 </div>
             </div>
         </Link>
