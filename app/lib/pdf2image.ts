@@ -29,6 +29,7 @@ export async function convertPdfToImage(
     file: File
 ): Promise<PdfConversionResult> {
     try {
+
         const lib = await loadPdfJs();
 
         const arrayBuffer = await file.arrayBuffer();
@@ -76,6 +77,7 @@ export async function convertPdfToImage(
             ); // Set quality to maximum (1.0)
         });
     } catch (err) {
+        console.error("Error converting PDF to image:", err);
         return {
             imageUrl: "",
             file: null,
